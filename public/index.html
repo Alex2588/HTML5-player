@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <meta charset='utf-8' />
+      <title>HTML5 Media Player</title>
+      <link href='player.css' type="text/css" rel='stylesheet' />
+      <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+   </head>
+ <body>
+     <div id="player">
+         <div id="video-container">
+             <div id="main-play-container">
+                 <img id="main-play-button" src="./images/play.png">
+             </div>
+            <video id="video" controls poster="./images/thumbnail.png">
+                <!--<source src="test.mkv">
+                <source src="small.mp4">-->
+                It seems your browser doesn't support HTML5 video tag. Please, update it!
+            </video>
+         </div>
+         <div id="progressbar-container"> 
+            <div id="progressbar"></div>
+         </div>
+         <div id="buttons-container">
+            <img id="play-button" src="./images/play.png">
+            <div id="time-field">
+                0:00 / 0:00
+            </div>
+            <div id="sound-group">
+                <img id="sound-button" src="./images/sound.png">
+                <div id="soundbar-container">
+                    <div id="soundbar"></div>
+                </div>
+            </div>
+            <img id="fullscreen-button" src="./images/fullscreen.png">
+         </div>
+     </div>
+     <script type="text/javascript" src="player.js"></script>
+ </body> 
+</html>

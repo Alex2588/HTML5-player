@@ -1,0 +1,84 @@
+#player{
+    background-color: rgb(30, 30, 30);
+    display: inline-block;
+    user-select: none;
+}
+img{
+    background-color: rgb(70, 70, 70);
+}
+img, #progressbar-container, #soundbar-container{
+    cursor: pointer;
+}
+img:hover{
+    background-color: rgb(50, 170, 220);
+}
+#video-container{
+    width: 854px;
+    height: 480px;
+    position: relative;
+}
+    #main-play-container{
+        height: 100%;
+        width: 100%;
+        line-height: 480px;
+        text-align: center;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100 !important;
+    }
+        #main-play-container img{
+            vertical-align: middle;
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+    video{
+        width: 100%;
+        height: 100%;
+    }
+#progressbar-container{
+    background-color: rgb(70, 70, 70);
+    margin-top: 2px;
+    padding-bottom: 2px;
+}
+    #progressbar{
+        background-color: rgb(50, 170, 220);
+        height: 5px;
+        width: 0%;
+    }
+#buttons-container{
+    height: 50px;
+} 
+    #buttons-container > * {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+    #time-field{
+        color: #fff;
+        line-height: 50px;
+    }
+    #sound-group > *{
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+        #sound-button{
+            margin-right: 0;
+        }
+        #soundbar-container{
+            margin-left: 0;
+            width: 100px;
+            height: 5px;
+            background-color: rgb(70, 70, 70);
+            display: none;
+            margin-right: 5px;
+        } 
+        #soundbar{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(50, 170, 220);
+        }
+    #fullscreen-button{
+        float: right;
+    }      
